@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitsubishi Evolution</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .columna-izquierda {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      width: 200px;
+    }
+
+    .opcion {
+      text-decoration: none;
+      color: #333; /* Color del texto para enlaces no visitados */
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .opcion:hover {
+      background-color: #f0f0f0;
+    }
+
+    .contenido-principal {
+      flex-grow: 1;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body onload="cambiarTitulo()">
+
+  <div class="container">
+    <div class="columna-izquierda">
+      <a href="Evo 1.html" class="opcion">Evolution 1</a>
+      <a href="Evo 2.html" class="opcion">Evolution 2</a>
+      <a href="Evo 3.html" class="opcion">Evolution 3</a>
+      <a href="Evo 4.html" class="opcion">Evolution 4</a>
+      <a href="Evo 9.html" class="opcion">Evolution 9</a>
+      <a href="Evo 10.html" class="opcion">Evolution 10</a>
+      <a href="Encuesta.html" class="opcion">Encuesta</a>
+    </div>
+    <div class="contenido-principal">
+      <h1>Mitsubishi Lancer Evolution</h1>
+    </div>
+  </div>
+
+</body>
+
 </html>
