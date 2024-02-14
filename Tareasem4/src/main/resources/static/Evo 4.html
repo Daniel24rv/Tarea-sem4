@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution 4</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .logo {
+            width: 50px; /* Ajusta el ancho según tus necesidades */
+            height: auto;
+            margin-right: 10px;
+        }
+        .opcion {
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .side-content {
+            width: 200px; 
+        }
+        .dropdown {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="imagenes/Logo de mitsubishi.jpg" alt="Logo de Evolution 1">
+        <span class="opcion" onclick="window.location.href='Home.html'">Home</span>
+    </div>
+
+    <div class="content">
+        <div class="main-content">
+            <h1>Evolution 4</h1>
+
+            <p>Redefiniendo la Experiencia de Conducción</p>
+
+            <h2>Características Destacadas:</h2>
+            <ul>
+                <li>Lancer Evo 4, que fue el primer modelo de la marca en alcanzar los 280 CV de potencia,
+                    y también el que adoptó por primera vez las características luces de niebla redondas</li>
+                <li>Los modelos Evo lll y IV forman parte de la historia dorada de Mitsubishi en la máxima competencia de rally.</li>
+                <li>El Evolution mas iconico es el Tommi Mäkinen ganó 4 ‘Montes’ y cuatro títulos consecutivos.</li>
+            </ul>
+
+            
+            <img src="imagenes/Evo 5.jpg" alt="Imagen del Evolution 4"/>
+            <h2>Explora el Evolution 4:</h2>
+            <video width="320" height="240" controls>
+                <source src="videos/Mitsubishi Lancer Evo IV Rally Group A - Starts, Anti-Lag, Accelerations & More.mp4" type="video/mp4">
+                Your browser does not support the <code>video</code> tag.
+            </video>
+        </div>
+
+        <div class="side-content">
+            <h2>Opciones</h2>
+            <div class="dropdown">
+                <select onchange="window.location.href=this.value;">
+                    <option value="#">Seleccione una opción</option>
+                    <option value="Home.html">Home</option>
+                    <option value="Evo 1.html">Evolution 1</option>
+                    <option value="Evo 2.html">Evolution 2</option>
+                    <option value="Evo 3.html">Evolution 3</option>
+                    <option value="Evo 9.html">Evolution 9</option>
+                    <option value="Evo 10.html">Evolution 10</option>
+                    <option value="Encuesta.html">Encuesta</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

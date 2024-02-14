@@ -9,6 +9,8 @@
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .container {
             display: flex;
@@ -17,39 +19,74 @@
             padding: 10px 20px;
         }
         .logo {
-            width: 50px; /* Ajusta el ancho según tus necesidades */
+            width: 50px;
             height: auto;
             margin-right: 10px;
         }
         .opcion {
             cursor: pointer;
         }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .side-content {
+            width: 200px; 
+        }
+        .dropdown {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img class="logo" src="imagenes/Logo de mitsubishi.jpg" alt="Logo de Mitsubishi">
+        <img class="logo" src="imagenes/Logo de mitsubishi.jpg" alt="Logo de Evolution 1">
         <span class="opcion" onclick="window.location.href='Home.html'">Home</span>
     </div>
 
-    <h1>Evolution 1</h1>
+    <div class="content">
+        <div class="main-content">
+            <h1>Evolution 1</h1>
 
-    <p>Redefiniendo la Experiencia de Conducción</p>
+            <p>Redefiniendo la Experiencia de Conducción</p>
 
-    <h2>Características Destacadas:</h2>
-    <ul>
-        <li>Motor de alto rendimiento que entrega una potencia excepcional.</li>
-        <li>Sistema de suspensión ajustable para una conducción suave y precisa.</li>
-        <li>Interior lujoso con detalles en cuero y la última tecnología en entretenimiento y conectividad.</li>
-        <li>Innovadoras características de seguridad para una conducción más segura.</li>
-    </ul>
+            <h2>Características Destacadas:</h2>
+            <ul>
+                <li>Motor de alto rendimiento que entrega una potencia excepcional.</li>
+                <li>Sistema de suspensión ajustable para una conducción suave y precisa.</li>
+                <li>Interior lujoso con detalles en cuero y la última tecnología en entretenimiento y conectividad.</li>
+                <li>Innovadoras características de seguridad para una conducción más segura.</li>
+            </ul>
 
-    <img src="imagenes/Evo 1.jpg" alt="Imagen del Evolution 1"/>
-    
-    <h2>Explora el Evolution 1:</h2>
-    <video width="320" height="240" controls>
-        <source src="videos/Historia del Mitsubishi Lancer Evolution I.mp4" type="video/mp4">
-        Tu navegador no soporta el tag de video.
-    </video>
+            <img src="imagenes/Evo 1.jpg" alt="Imagen del Evolution 1"/>
+
+            <h2>Explora el Evolution 1:</h2>
+            <video width="320" height="240" controls>
+                <source src="videos/Historia del Mitsubishi Lancer Evolution I.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+        </div>
+
+        <div class="side-content">
+            <h2>Opciones</h2>
+            <div class="dropdown">
+                <select onchange="window.location.href=this.value;">
+                    <option value="#">Seleccione una opción</option>
+                    <option value="Home.html">Home</option>
+                    <option value="Evo 2.html">Evolution 2</option>
+                    <option value="Evo 3.html">Evolution 3</option>
+                    <option value="Evo 4.html">Evolution 4</option>
+                    <option value="Evo 9.html">Evolution 9</option>
+                    <option value="Evo 10.html">Evolution 10</option>
+                    <option value="Encuesta.html">Encuesta</option>
+                </select>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

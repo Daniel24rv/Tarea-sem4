@@ -14,26 +14,28 @@
       font-family: Arial, sans-serif;
     }
     body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
     .container {
       display: flex;
-      width: 100%;
-      max-width: 1200px;
+      align-items: center; /* Centra verticalmente los elementos */
+      justify-content: center; /* Centra horizontalmente los elementos */
+      height: 100vh; /* 100% del viewport height */
     }
 
     .columna-izquierda {
       background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       width: 200px;
+      margin-right: 20px; /* Espacio entre la columna y las imágenes */
     }
 
     .opcion {
       text-decoration: none;
-      color: #333; /* Color del texto para enlaces no visitados */
+      color: #333;
       display: block;
       padding: 10px;
       margin-bottom: 10px;
@@ -47,9 +49,19 @@
     }
 
     .contenido-principal {
-      flex-grow: 1;
       padding: 20px;
       text-align: center;
+    }
+
+    .imagenes-centro {
+      display: flex;
+      flex-wrap: wrap; /* Asegura que las imágenes se envuelvan si no hay suficiente espacio */
+      justify-content: center; /* Centra horizontalmente las imágenes */
+    }
+
+    .imagen {
+      max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+      margin: 10px; /* Espacio entre las imágenes */
     }
   </style>
 </head>
@@ -68,9 +80,17 @@
     </div>
     <div class="contenido-principal">
       <h1>Mitsubishi Lancer Evolution</h1>
+      <div class="imagenes-centro">
+          <img src="imagenes/Logo de mitsubishi.jpg" alt="Logo" class="imagen"/>
+          <img src="imagenes/Evo 1.jpg" alt="Evo 1" class="imagen">
+          <img src="imagenes/evo 2.jpg" alt="Evo 2" class="imagen"/>
+          <img src="imagenes/Evo 3.jpg" alt="Evo 3" class="imagen"/>
+          <img src="imagenes/Evo 5.jpg" alt="Evo 4" class="imagen"/>
+          <img src="imagenes/Evo 9.jpg" alt="Evo 9" class="imagen"/>
+          <img src="imagenes/evo 10.jpg" alt="Evo 10" class="imagen"/>
+      </div>
     </div>
   </div>
 
 </body>
-
 </html>
